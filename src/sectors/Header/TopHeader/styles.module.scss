@@ -1,0 +1,16 @@
+.TopHeader {
+  display: flex;
+  flex-direction: row;
+  .logoAcademyImg {
+    width: 500px;
+  }
+  .search-wrapper {
+    background: wheat;
+    .search-input {
+      width: 100px;
+    }
+    .searchImg {
+      width: 200px;
+    }
+  }
+}
