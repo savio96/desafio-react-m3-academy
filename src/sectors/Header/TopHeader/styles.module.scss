@@ -1,16 +1,61 @@
 .TopHeader {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  height: 101px;
+
   .logoAcademyImg {
-    width: 500px;
+    width: 262px;
+    height: 50.5px;
+    margin-left: 100px;
+    margin-right: 626.38px;
   }
   .search-wrapper {
-    background: wheat;
+    //background: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 515.62px;
+    //width: 20.62%;
+    height: 57px;
+    margin-right: 677.38px;
     .search-input {
-      width: 100px;
+      width: 515.62px;
+      height: 57px;
+      border: 2px solid #f0f0f0;
+      border-radius: 5px;
+      &::placeholder {
+        padding: 3px;
+        color: black;
+      }
     }
-    .searchImg {
-      width: 200px;
+    .buscaBtn {
+      width: 100px;
+      height: 50px;
+      position: relative;
+      background-color: white;
+      right: 160px;
+      top: 7px;
+      border: white;
+      .searchImg {
+        width: 35.15px;
+        height: 35.15px;
+        img {
+          margin: 0 0 0 0;
+        }
+      }
+    }
+  }
+
+  .loginLink {
+    height: 300px;
+    color: white;
+  }
+  .cartLink {
+    width: 54px;
+    height: 54px;
+    .cartImg {
+      width: 54px;
+      height: 54px;
     }
   }
 }

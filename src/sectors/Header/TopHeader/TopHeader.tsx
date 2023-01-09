@@ -21,11 +21,13 @@ const TopHeader = () => {
           placeholder="Buscar"
           required
         />
-        <img
-          className={styles["searchImg"]}
-          alt="LogoM3Academy"
-          src={searchImg}
-        />
+        <button className={styles["buscaBtn"]}>
+          <img
+            className={styles["searchImg"]}
+            alt="LogoM3Academy"
+            src={searchImg}
+          />
+        </button>
       </div>
       <a className={styles["loginLink"]} href="/">
         ENTRAR
