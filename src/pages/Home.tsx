@@ -1,10 +1,10 @@
 import React from "react";
-import { Newsletter } from "../components/Newsletter/Newsletter";
+import { FormInput } from "../components/FormInput/FormInput";
 
 const Home = () => {
   return (
     <div>
-      <Newsletter></Newsletter>
+      <FormInput></FormInput>
     </div>
   );
 };
