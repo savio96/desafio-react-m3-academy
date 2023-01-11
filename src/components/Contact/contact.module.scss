@@ -1,0 +1,37 @@
+.contatosInfo {
+  li {
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    @media screen and (min-width: 2500px) {
+      font-size: 38px;
+      line-height: 32.81px;
+    }
+  }
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    @media screen and (min-width: 2500px) {
+      font-size: 24px;
+      line-height: 28.13px;
+    }
+  }
+  a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #030303;
+    @media screen and (min-width: 2500px) {
+      font-size: 24px;
+      line-height: 28.13px;
+    }
+  }
+  .contatoCel {
+    text-decoration: underline;
+  }
+}
