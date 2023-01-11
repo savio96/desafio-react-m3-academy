@@ -1,0 +1,32 @@
+.institutionalList {
+  li {
+    color: #303030;
+    margin-bottom: 12px;
+    @media screen and (min-width: 2500px) {
+    }
+  }
+  a {
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #303030;
+    @media screen and (min-width: 2500px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    h2 {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.41px;
+      color: #303030;
+      @media screen and (min-width: 2500px) {
+        font-size: 28px;
+        line-height: 33px;
+      }
+    }
+  }
+  .revendedor {
+    text-decoration: underline;
+  }
+}
