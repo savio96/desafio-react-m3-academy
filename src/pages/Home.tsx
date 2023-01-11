@@ -1,10 +1,10 @@
 import React from "react";
-import { Socials } from "../components/Socials/Socials";
+import { Newsletter } from "../components/Newsletter/Newsletter";
 
 const Home = () => {
   return (
     <div>
-      <Socials></Socials>
+      <Newsletter></Newsletter>
     </div>
   );
 };
