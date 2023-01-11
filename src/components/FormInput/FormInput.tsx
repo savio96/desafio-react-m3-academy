@@ -1,5 +1,6 @@
 import React from "react";
 import { useFormik } from "formik";
+import * as Yup from "yup";
 import styles from "./formInput.module.scss";
 
 const FormInput = () => {
@@ -12,6 +13,14 @@ const FormInput = () => {
       tel: "",
       instagram: "",
     },
+    validationSchema: Yup.object({
+      nome: Yup.string().label("Seu nome completo").required(),
+      email: Yup.string().email().required(),
+      cpf: Yup.string().required(),
+      nascimento: Yup.string().required(),
+      tel: Yup.string().required(),
+      instagram: Yup.string().required(),
+    }),
     onSubmit: function (values) {
       alert(`You are registered! Name: ${values.nome}. Email: ${values.email}. Profession: ${values.cpf}. 
               Age: ${values.nascimento}`);
