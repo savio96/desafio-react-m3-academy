@@ -5,7 +5,6 @@ import instagramImg from "./assets/images/Instagram.png";
 import twitterImg from "./assets/images/Twitter.png";
 import youtubeImg from "./assets/images/Youtube.png";
 import linkedinImg from "./assets/images/Linkedin.png";
-import whatsappImg from "./assets/images/whatsapp.png";
 
 const Socials = () => {
   return (
@@ -25,9 +24,6 @@ const Socials = () => {
         </li>
         <li className={styles["socials-item"]}>
           <img src={linkedinImg} alt="Linkedin" />
-        </li>
-        <li className={styles["socials-item"]}>
-          <img src={whatsappImg} alt="Whatsapp" />
         </li>
       </ul>
       <a className={styles["siteLink"]} href="/">
