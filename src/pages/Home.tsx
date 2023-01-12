@@ -1,10 +1,11 @@
 import React from "react";
-import { FormInput } from "../components/FormInput/FormInput";
+import { NavigationBar } from "../components/NavigationBar/NavigationBar";
 
 const Home = () => {
+  //const style = { background: "black" };
   return (
-    <div>
-      <FormInput></FormInput>
+    <div /*style={style}*/>
+      <NavigationBar></NavigationBar>
     </div>
   );
 };
