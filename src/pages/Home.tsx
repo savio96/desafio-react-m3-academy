@@ -1,11 +1,11 @@
 import React from "react";
-import { SearchBox } from "../components/SearchBox/SearchBox";
+import { Cart } from "../components/Cart/Cart";
 
 const Home = () => {
-  const style = { background: "white" };
+  const style = { background: "black" };
   return (
     <div style={style}>
-      <SearchBox></SearchBox>
+      <Cart></Cart>
     </div>
   );
 };
