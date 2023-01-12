@@ -1,10 +1,11 @@
 import React from "react";
-import { FormInput } from "../components/FormInput/FormInput";
+import { SearchBox } from "../components/SearchBox/SearchBox";
 
 const Home = () => {
+  const style = { background: "white" };
   return (
-    <div>
-      <FormInput></FormInput>
+    <div style={style}>
+      <SearchBox></SearchBox>
     </div>
   );
 };
