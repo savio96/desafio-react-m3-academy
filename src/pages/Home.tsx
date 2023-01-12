@@ -1,11 +1,11 @@
 import React from "react";
-import { Cart } from "../components/Cart/Cart";
+import { NavigationBar } from "../components/NavigationBar/NavigationBar";
 
 const Home = () => {
-  const style = { background: "black" };
+  //const style = { background: "black" };
   return (
-    <div style={style}>
-      <Cart></Cart>
+    <div /*style={style}*/>
+      <NavigationBar></NavigationBar>
     </div>
   );
 };
