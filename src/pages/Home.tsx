@@ -1,9 +1,10 @@
 import React from "react";
-import { Header } from "../sectors/Header/Header";
+import { FormInput } from "../components/FormInput/FormInput";
+
 const Home = () => {
   return (
     <div>
-      <Header />
+      <FormInput></FormInput>
     </div>
   );
 };
