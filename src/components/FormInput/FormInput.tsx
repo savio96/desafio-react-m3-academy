@@ -15,15 +15,17 @@ const FormInput = () => {
       termos: false,
     },
     validationSchema: Yup.object({
-      nome: Yup.string().required("*Campo Obrigatório"),
-      /*.test(
+      nome: Yup.string()
+        .required("*Campo Obrigatório")
+        .test(
           "is-full-name",
           "Please enter both your first and last name",
           function (value: any) {
             const nameArr = value.split(" ");
             return nameArr.length >= 2;
           }
-        )*/ email: Yup.string().required("*Campo Obrigatório"),
+        ),
+      email: Yup.string().required("*Campo Obrigatório"),
       cpf: Yup.string().required("*Campo Obrigatório"),
       nascimento: Yup.string().required("*Campo Obrigatório"),
       tel: Yup.string().required("*Campo Obrigatório"),
