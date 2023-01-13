@@ -7,3 +7,11 @@
   flex-direction: column;
   margin-bottom: 10px;
 }
+.textForm {
+  display: flex;
+  flex-direction: row;
+}
+.errorFormik {
+  margin-left: 80px;
+  color: red;
+}
