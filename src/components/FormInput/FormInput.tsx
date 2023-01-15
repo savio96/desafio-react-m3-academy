@@ -13,8 +13,8 @@ import styles from "./formInput.module.scss";
 
 interface IFormikValues {
   nome: string;
-  //email: string;
-  //cpf: string;
+  email: string;
+  cpf: string;
   //nascimento: string;
   //tel: string;
   //instagram: string;
@@ -23,8 +23,8 @@ interface IFormikValues {
 const FormInput = () => {
   const initialValues = {
     nome: "",
-    //email: "",
-    //cpf: "",
+    email: "",
+    cpf: "",
     //nascimento: "",
     //tel: "",
     //instagram: "",
@@ -78,7 +78,19 @@ const FormInput = () => {
           }
         }
       ),
-    termos: Yup.boolean().required("*").isTrue(),
+    email: Yup.string().required("*Campo Obrigatório").email("E-mail inválido"),
+    cpf: Yup.string()
+      .required("*Campo Obrigatório")
+      .test("cpf", "Preencha com um cpf válido.", function (value: any) {
+        if (value === "" || value === undefined) {
+          return false;
+        } else {
+          const cpfRegex = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
+          const regex = new RegExp(cpfRegex);
+          return regex.test(value);
+        }
+      }),
+    termos: Yup.boolean().oneOf([true], "*"),
   });
   const handleFormikSubmit = (values: IFormikValues) => {
     console.log(values);
@@ -110,6 +122,42 @@ const FormInput = () => {
                 name="nome"
                 placeholder="Seu nome completo"
                 className={errors.nome && touched.nome && "invalid"}
+              />
+            </div>
+            <div className={styles["form-col"]}>
+              <div className={styles["form-text"]}>
+                <label htmlFor="email">E-mail</label>
+                <ErrorMessage
+                  component="span"
+                  name="email"
+                  className={styles["form-error"]}
+                />
+              </div>
+
+              <Field
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Seu e-mail"
+                className={errors.email && touched.email && "invalid"}
+              />
+            </div>
+            <div className={styles["form-col"]}>
+              <div className={styles["form-text"]}>
+                <label htmlFor="cpf">CPF</label>
+                <ErrorMessage
+                  component="span"
+                  name="cpf"
+                  className={styles["form-error"]}
+                />
+              </div>
+
+              <Field
+                type="text"
+                id="cpf"
+                name="cpf"
+                placeholder="000.000.000-00"
+                className={errors.cpf && touched.cpf && "invalid"}
               />
             </div>
             <div className={styles["form-col"] && styles["form-check"]}>
