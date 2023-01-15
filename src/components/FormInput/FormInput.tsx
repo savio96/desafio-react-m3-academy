@@ -95,8 +95,15 @@ const FormInput = () => {
         {({ errors, touched }) => (
           <Form>
             <div className={styles["form-col"]}>
-              <label htmlFor="nome">Nome</label>
-              <ErrorMessage component="span" name="nome" />
+              <div className={styles["form-text"]}>
+                <label htmlFor="nome">Nome</label>
+                <ErrorMessage
+                  component="span"
+                  name="nome"
+                  className={styles["form-error"]}
+                />
+              </div>
+
               <Field
                 type="text"
                 id="nome"
@@ -105,20 +112,33 @@ const FormInput = () => {
                 className={errors.nome && touched.nome && "invalid"}
               />
             </div>
-            <div className={styles["form-col"]}>
-              <ErrorMessage component="span" name="termos" />
-              <label htmlFor="check">
-                <a href="/">Declaro que li e aceito</a>
-              </label>
+            <div className={styles["form-col"] && styles["form-check"]}>
+              <div className={styles["form-text-check"]}>
+                <ErrorMessage
+                  component="span"
+                  name="termos"
+                  className={styles["form-error"]}
+                />
+                <label htmlFor="check">
+                  <a href="/">Declaro que li e aceito</a>
+                </label>
+              </div>
 
               <Field
                 type="checkbox"
                 id="check"
                 name="termos"
-                className={errors.termos && touched.termos && "invalid"}
+                className={
+                  errors.termos &&
+                  touched.termos &&
+                  "invalid" &&
+                  styles["form-checkbox"]
+                }
               />
             </div>
-            <button type="submit">Cadastre-se</button>
+            <button className={styles["form-btn"]} type="submit">
+              Cadastre-se
+            </button>
           </Form>
         )}
       </Formik>
