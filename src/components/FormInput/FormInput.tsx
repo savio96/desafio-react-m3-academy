@@ -8,6 +8,7 @@ import {
   FormikHelpers,
 } from "formik";
 import * as Yup from "yup";
+
 import styles from "./formInput.module.scss";
 
 interface IFormikValues {
@@ -66,8 +67,8 @@ const FormInput = () => {
     nome: Yup.string()
       .required("*Campo Obrigatório")
       .test(
-        "is-full-name",
-        "Please enter both your first and last name",
+        "Nome Completo",
+        "Preencha com um nome e sobrenome válido.",
         function (value: any) {
           if (value === "" || value === undefined) {
             return false;
@@ -82,8 +83,9 @@ const FormInput = () => {
   const handleFormikSubmit = (values: IFormikValues) => {
     console.log(values);
   };
+
   return (
-    <div>
+    <div className={styles["form-wrapper"]}>
       <h2>Preencha o formulário</h2>
       <Formik
         onSubmit={handleFormikSubmit}
@@ -92,19 +94,29 @@ const FormInput = () => {
       >
         {({ errors, touched }) => (
           <Form>
-            <div>
+            <div className={styles["form-col"]}>
               <label htmlFor="nome">Nome</label>
+              <ErrorMessage component="span" name="nome" />
               <Field
                 type="text"
                 id="nome"
                 name="nome"
+                placeholder="Seu nome completo"
                 className={errors.nome && touched.nome && "invalid"}
               />
-              <ErrorMessage component="span" name="nome" />
             </div>
-            <div>
-              <label htmlFor="check">termos</label>
-              <Field type="checkbox" id="check" name="termos" className="" />
+            <div className={styles["form-col"]}>
+              <ErrorMessage component="span" name="termos" />
+              <label htmlFor="check">
+                <a href="/">Declaro que li e aceito</a>
+              </label>
+
+              <Field
+                type="checkbox"
+                id="check"
+                name="termos"
+                className={errors.termos && touched.termos && "invalid"}
+              />
             </div>
             <button type="submit">Cadastre-se</button>
           </Form>

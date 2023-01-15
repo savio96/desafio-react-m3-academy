@@ -1,4 +1,4 @@
-.form {
+/*.form {
   display: flex;
   flex-direction: column;
 }
@@ -14,4 +14,70 @@
 .errorFormik {
   margin-left: 80px;
   color: red;
+}
+*/
+.form-wrapper {
+  width: 100%;
+  max-width: 720px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-wrapper h2 {
+  font-weight: 700;
+  font-size: 27px;
+  margin: 0 0 12px 0;
+  @media screen and (min-width: 2500px) {
+    font-size: 48px;
+  }
+}
+.form-wrapper form {
+  width: 100%;
+}
+.form-col {
+  display: flex;
+  flex-direction: column;
+}
+.form-col label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #100d0e;
+  margin: 0 0 4px 0;
+  @media screen and (min-width: 2500px) {
+    font-size: 28px;
+  }
+}
+.form-col input {
+  background: #ffffff;
+  border: 1px solid #100d0e;
+  border-radius: 25px;
+  height: 46px;
+  padding: 15px 0 15px 20px;
+  &::placeholder {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #b9b7b7;
+  }
+  @media screen and (min-width: 2500px) {
+    height: 63px;
+    &::placeholder {
+      font-size: 28px;
+    }
+  }
+}
+.form-wrapper button {
+  width: 100%;
+  height: 52.44px;
+  background: #000000;
+  border-radius: 25px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 400;
 }
