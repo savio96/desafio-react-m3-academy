@@ -15,9 +15,9 @@ interface IFormikValues {
   nome: string;
   email: string;
   cpf: string;
-  //nascimento: string;
-  //tel: string;
-  //instagram: string;
+  nascimento: string;
+  tel: string;
+  instagram: string;
   termos: boolean;
 }
 const FormInput = () => {
@@ -25,9 +25,9 @@ const FormInput = () => {
     nome: "",
     email: "",
     cpf: "",
-    //nascimento: "",
-    //tel: "",
-    //instagram: "",
+    nascimento: "",
+    tel: "",
+    instagram: "",
     termos: false,
   }; /*
   const formik = useFormik({
@@ -90,6 +90,39 @@ const FormInput = () => {
           return regex.test(value);
         }
       }),
+    nascimento: Yup.string()
+      .required("*Campo Obrigatório")
+      .test(
+        "nascimento",
+        "Preencha com uma data válida.",
+        function (value: any) {
+          if (value === "" || value === undefined) {
+            return false;
+          } else {
+            const nascimentoRegex =
+              "^(0[1-9]|[12][0-9]|3[01]).(0[1-9]|1[012]).[12][0-9]{3}$";
+            const regex = new RegExp(nascimentoRegex);
+            return regex.test(value);
+          }
+        }
+      ),
+    tel: Yup.string()
+      .required("*Campo Obrigatório")
+      .test(
+        "telefone",
+        "Preencha com um telefone válido.",
+        function (value: any) {
+          if (value === "" || value === undefined) {
+            return false;
+          } else {
+            const telefoneRegex =
+              "^((\\+\\d{2}\\s)?\\(\\d{2}\\)\\s?\\d{4}\\d?\\-\\d{4})?$";
+            const regex = new RegExp(telefoneRegex);
+            return regex.test(value);
+          }
+        }
+      ),
+    instagram: Yup.string(),
     termos: Yup.boolean().oneOf([true], "*"),
   });
   const handleFormikSubmit = (values: IFormikValues) => {
@@ -158,6 +191,60 @@ const FormInput = () => {
                 name="cpf"
                 placeholder="000.000.000-00"
                 className={errors.cpf && touched.cpf && "invalid"}
+              />
+            </div>
+            <div className={styles["form-col"]}>
+              <div className={styles["form-text"]}>
+                <label htmlFor="nascimento">Data de Nascimento</label>
+                <ErrorMessage
+                  component="span"
+                  name="nascimento"
+                  className={styles["form-error"]}
+                />
+              </div>
+
+              <Field
+                type="text"
+                id="nascimento"
+                name="nascimento"
+                placeholder="00.00.0000"
+                className={errors.nascimento && touched.nascimento && "invalid"}
+              />
+            </div>
+            <div className={styles["form-col"]}>
+              <div className={styles["form-text"]}>
+                <label htmlFor="tel">Telefone</label>
+                <ErrorMessage
+                  component="span"
+                  name="tel"
+                  className={styles["form-error"]}
+                />
+              </div>
+
+              <Field
+                type="text"
+                id="tel"
+                name="tel"
+                placeholder="(00) 00000-0000"
+                className={errors.tel && touched.tel && "invalid"}
+              />
+            </div>
+            <div className={styles["form-col"]}>
+              <div className={styles["form-text"]}>
+                <label htmlFor="instagram">Instagram</label>
+                <ErrorMessage
+                  component="span"
+                  name="instagram"
+                  className={styles["form-error"]}
+                />
+              </div>
+
+              <Field
+                type="text"
+                id="instagram"
+                name="instagram"
+                placeholder="@seuuser"
+                className={errors.instagram && touched.instagram && "invalid"}
               />
             </div>
             <div className={styles["form-col"] && styles["form-check"]}>
