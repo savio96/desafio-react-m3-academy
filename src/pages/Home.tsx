@@ -1,11 +1,11 @@
 import React from "react";
-import { FormInput } from "../components/FormInput/FormInput";
+import { AccordionBody } from "../components/AccordionBody/AccordionBody";
 
 const Home = () => {
   //const style = { background: "black" };
   return (
     <div /*style={style}*/>
-      <FormInput></FormInput>
+      <AccordionBody />
     </div>
   );
 };

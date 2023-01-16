@@ -195,7 +195,7 @@ const FormInput = () => {
             </div>
             <div className={styles["form-col"]}>
               <div className={styles["form-text"]}>
-                <label htmlFor="nascimento">Data de Nascimento</label>
+                <label htmlFor="nascimento">Data de Nascimento:</label>
                 <ErrorMessage
                   component="span"
                   name="nascimento"
