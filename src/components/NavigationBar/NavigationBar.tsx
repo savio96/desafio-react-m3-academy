@@ -4,10 +4,7 @@ import m3LogoImg from "./assets/image/Logo-M3Academy.svg";
 import { Cart } from "../Cart/Cart";
 const NavigationBar = () => {
   return (
-    <nav
-      className="navbar navbar-expand-xpp bg-body-tertiary navbar-dark bg-dark"
-      id="navegador"
-    >
+    <nav className="navbar navbar-expand-xpp bg-body-tertiary " id="navegador">
       <div className="container-fluid">
         <button
           className="navbar-toggler"

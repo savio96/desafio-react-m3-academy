@@ -1,11 +1,10 @@
 import React from "react";
-import { NavigationBar } from "../components/NavigationBar/NavigationBar";
+import { Header } from "../sectors/Header/Header";
 
 const Home = () => {
-  //const style = { background: "black" };
   return (
-    <div /*style={style}*/>
-      <NavigationBar></NavigationBar>
+    <div>
+      <Header></Header>
     </div>
   );
 };

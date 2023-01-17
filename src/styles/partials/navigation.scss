@@ -14,7 +14,34 @@
   color: white;
   font-size: 14px;
   font-weight: 500;
+  &:hover {
+    color: aqua;
+  }
+  .active {
+    color: aquamarine;
+  }
   @media screen and (min-width: 2500px) {
     font-size: 28px;
+  }
+}
+.bottom_header {
+  background: black;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+}
+.navbar-toggler-icon {
+  background-color: white;
+}
+.navbar-collapse {
+  background-color: white;
+  .nav-link {
+    color: black;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .container-fluid {
+    padding: 0 0 0 0;
   }
 }
