@@ -1,17 +1,14 @@
-/*import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-
-*/
+import { M3Logo } from "../M3Logo/M3Logo";
 import styles from "./navigationBar.module.scss";
+import m3LogoImg from "./assets/image/Logo-M3Academy.svg";
+import { Cart } from "../Cart/Cart";
 const NavigationBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary" id="navegador">
+    <nav
+      className="navbar navbar-expand-xpp bg-body-tertiary navbar-dark bg-dark"
+      id="navegador"
+    >
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,6 +20,13 @@ const NavigationBar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+        <a className="navbar-brand" href="#">
+          <img className="logoM3Img" src={m3LogoImg} alt="M3 Academy mobile" />
+        </a>
+        <div className="carrinho-wrapper">
+          <Cart />
+        </div>
+
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
