@@ -1,11 +1,11 @@
 import React from "react";
-import { AccordionBody } from "../components/AccordionBody/AccordionBody";
+import { NavigationBar } from "../components/NavigationBar/NavigationBar";
 
 const Home = () => {
   //const style = { background: "black" };
   return (
     <div /*style={style}*/>
-      <AccordionBody />
+      <NavigationBar></NavigationBar>
     </div>
   );
 };

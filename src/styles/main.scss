@@ -3,4 +3,5 @@
 @import "common/reset.scss";
 @import "partials/header.scss";
 @import "partials/container.scss";
-@import "~bootstrap/scss/bootstrap";
+@import "utils/bootcustom.scss";
+@import "/node_modules/bootstrap/scss/bootstrap";
