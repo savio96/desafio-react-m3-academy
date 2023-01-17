@@ -35,13 +35,21 @@
   background-color: white;
 }
 .navbar-collapse {
-  background-color: white;
+  @media screen and (max-width: 1025px) {
+    background-color: white;
+  }
   .nav-link {
-    color: black;
+    color: white;
+    @media screen and (max-width: 1025px) {
+      color: black;
+    }
   }
 }
 @media screen and (max-width: 1025px) {
   .container-fluid {
     padding: 0 0 0 0;
+  }
+  .navbar-nav {
+    margin-left: 20px;
   }
 }

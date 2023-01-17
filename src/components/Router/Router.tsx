@@ -1,6 +1,7 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Home } from "../../pages/Home";
+import { Teste } from "../../pages/Teste";
 /*
 import Home from "./Home";
 import Sobre from "./Sobre";
@@ -9,12 +10,17 @@ import Usuario from "./Usuario";
       <Route component={Sobre} path="/sobre" />
       <Route component={Usuario} path="/usuario" />
 */
-const Routes = () => {
+
+const RoutesUrl = () => {
   return (
     <BrowserRouter>
-      <Route path="/" element={<Home />} />
+      <Routes>
+        <Route path="/" element={<Teste titulo={"home"} />}>
+          <Route index element={<Teste titulo={"home"} />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 };
 
-export { Routes };
+export { RoutesUrl };

@@ -2,7 +2,9 @@ import { M3Logo } from "../M3Logo/M3Logo";
 import styles from "./navigationBar.module.scss";
 import m3LogoImg from "./assets/image/Logo-M3Academy.svg";
 import { Cart } from "../Cart/Cart";
+import React, { useState } from "react";
 const NavigationBar = () => {
+  const [linkUrl, setLinkUrl] = useState(0);
   return (
     <nav className="navbar navbar-expand-xpp bg-body-tertiary " id="navegador">
       <div className="container-fluid">
