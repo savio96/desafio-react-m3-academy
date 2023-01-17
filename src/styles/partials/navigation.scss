@@ -9,3 +9,12 @@
 .logoM3Img {
   width: 136px;
 }
+.nav-link {
+  font-family: "Roboto";
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  @media screen and (min-width: 2500px) {
+    font-size: 28px;
+  }
+}
