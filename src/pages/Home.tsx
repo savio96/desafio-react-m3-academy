@@ -4,7 +4,7 @@ import { Footer } from "../sectors/Footer/Footer";
 const Home = (prop: { titulo: string }) => {
   return (
     <div>
-      <Footer></Footer>
+      <Header></Header>
     </div>
   );
 };
