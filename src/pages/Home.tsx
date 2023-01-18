@@ -1,10 +1,10 @@
 import React from "react";
-import { Socials } from "../components/Socials/Socials";
+import { Header } from "../sectors/Header/Header";
 
-const Home = () => {
+const Home = (prop: { titulo: string }) => {
   return (
     <div>
-      <Socials></Socials>
+      <Header></Header>
     </div>
   );
 };

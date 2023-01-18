@@ -5,7 +5,7 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": false
+    "**/Thumbs.db": true
   },
   "explorerExclude.backup": {}
 }
