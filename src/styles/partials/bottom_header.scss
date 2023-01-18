@@ -5,4 +5,17 @@
   @media screen and (max-width: 1025px) {
     padding: 0 16px 0 16px;
   }
+  @media screen and (min-width: 1025px) {
+    .search-wrapper {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1025px) {
+    .bottom_header {
+      justify-content: center;
+      align-items: center;
+    }
+    .search-wrapper {
+    }
+  }
 }

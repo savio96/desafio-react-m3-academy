@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "../sectors/Header/Header";
 
-const Home = () => {
+const Home = (prop: { titulo: string }) => {
   return (
     <div>
       <Header></Header>

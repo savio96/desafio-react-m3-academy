@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Home } from "../../pages/Home";
 import { Teste } from "../../pages/Teste";
+import { Cursos } from "../../pages/Cursos";
 /*
 import Home from "./Home";
 import Sobre from "./Sobre";
@@ -16,7 +17,7 @@ const RoutesUrl = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Teste titulo={"home"} />}>
-          <Route index element={<Teste titulo={"home"} />} />
+          <Route path="cursos" element={<Cursos titulo={"Cursos"} />} />
         </Route>
       </Routes>
     </BrowserRouter>

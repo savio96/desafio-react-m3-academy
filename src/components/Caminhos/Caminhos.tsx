@@ -8,18 +8,21 @@ const Caminhos = (prop: { titulo: string }) => {
   return (
     <>
       <nav>
-        <ul>
-          <li>
+        <ul className={styles["caminhos-itens"]}>
+          <li className={styles["caminhos-item"]}>
             <Link to="/">
-              <img src={homeImg} alt="Home image" />
+              <img
+                className={styles["home_img"]}
+                src={homeImg}
+                alt="Home image"
+              />
             </Link>
           </li>
-          <li>
+          <li className={styles["caminhos-item"]}>
             <p>&gt;</p>
-            <p>{prop.titulo}</p>
           </li>
-          <li>
-            <Link to="/contact">Contact</Link>
+          <li className={styles["caminhos-item"]}>
+            <p>{prop.titulo}</p>
           </li>
         </ul>
       </nav>

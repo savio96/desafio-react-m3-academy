@@ -23,6 +23,9 @@
   @media screen and (min-width: 2500px) {
     font-size: 28px;
   }
+  @media screen and (max-width: 1025px) {
+    color: #c4c4c4;
+  }
 }
 .bottom_header {
   background: black;
@@ -34,22 +37,22 @@
 .navbar-toggler-icon {
   background-color: white;
 }
-.navbar-collapse {
-  @media screen and (max-width: 1025px) {
-    background-color: white;
-  }
-  .nav-link {
-    color: white;
-    @media screen and (max-width: 1025px) {
-      color: black;
-    }
-  }
-}
-@media screen and (max-width: 1025px) {
+
+@media screen and (max-width: 1024px) {
   .container-fluid {
     padding: 0 0 0 0;
   }
   .navbar-nav {
     margin-left: 20px;
+  }
+  .offcanvas-header {
+    background-color: black;
+  }
+  .btn-close {
+    color: white;
+  }
+  .offcanvas {
+    width: 100%;
+    height: 585px;
   }
 }
