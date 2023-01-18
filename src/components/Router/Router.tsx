@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+
 import { Home } from "../../pages/Home";
 import { Teste } from "../../pages/Teste";
 import { Cursos } from "../../pages/Cursos";
@@ -14,13 +15,10 @@ import Usuario from "./Usuario";
 
 const RoutesUrl = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Teste titulo={"home"} />}>
-          <Route path="cursos" element={<Cursos titulo={"Cursos"} />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home titulo="Home" />}></Route>
+      <Route path="/cursos" element={<Cursos titulo="Cursos" />} />
+    </Routes>
   );
 };
 
