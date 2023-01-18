@@ -1,0 +1,21 @@
+.bottom_header {
+  background: black;
+  padding: 0 100px 0 64px;
+  border-top: 1px solid #e5e5e5;
+  @media screen and (max-width: 1025px) {
+    padding: 0 16px 0 16px;
+  }
+  @media screen and (min-width: 1025px) {
+    .search-wrapper {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1025px) {
+    .bottom_header {
+      justify-content: center;
+      align-items: center;
+    }
+    .search-wrapper {
+    }
+  }
+}

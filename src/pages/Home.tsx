@@ -1,11 +1,10 @@
 import React from "react";
-import { AccordionBody } from "../components/AccordionBody/AccordionBody";
+import { Header } from "../sectors/Header/Header";
 
-const Home = () => {
-  //const style = { background: "black" };
+const Home = (prop: { titulo: string }) => {
   return (
-    <div /*style={style}*/>
-      <AccordionBody />
+    <div>
+      <Header></Header>
     </div>
   );
 };

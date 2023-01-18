@@ -1,14 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/main.scss";
-import { Home } from "./pages/Home";
 
+import { Home } from "./pages/Home";
+import { Teste } from "./pages/Teste";
+
+import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Home />
+    <BrowserRouter>
+      <Home titulo={"home"}></Home>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
