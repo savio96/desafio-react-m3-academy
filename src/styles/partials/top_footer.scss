@@ -1,0 +1,11 @@
+.top_footer_itens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding: 0 0 0 0 !important;
+}
+.top_footer_item {
+  display: flex;
+  flex-direction: row;
+}
