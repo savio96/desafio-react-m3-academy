@@ -1,9 +1,17 @@
 .newsForm {
+  width: 474px;
+  height: 72px;
   display: flex;
   flex-direction: column;
   font-weight: 500;
   font-size: 18px;
+  font-family: "Roboto";
   font-variant: small-caps;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  font-style: normal;
+  color: #303030;
+  margin: 16px 0 16px 0;
   @media screen and (min-width: 2500px) {
     font-size: 36px;
   }
@@ -26,6 +34,7 @@
     font-weight: 400;
     font-size: 14px;
     color: #c4c4c4;
+    font-family: "Roboto";
     @media screen and (min-width: 2500px) {
       font-size: 28px;
     }
@@ -36,6 +45,7 @@
   }
 }
 .newsForm-btn {
+  display: flex;
   width: 126px;
   height: 42px;
   background: #000000;
@@ -45,6 +55,8 @@
   color: white;
   font-weight: 700;
   font-size: 12px;
+  align-items: center;
+  justify-content: center;
   @media screen and (min-width: 2500px) {
     width: 246px;
     height: 59px;

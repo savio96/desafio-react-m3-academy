@@ -8,6 +8,7 @@ import { Cursos } from "./pages/Cursos";
 import { RoutesUrl } from "./components/Router/Router";
 import { Header } from "./sectors/Header/Header";
 import { Footer } from "./sectors/Footer/Footer";
+import { Newsletter } from "./components/Newsletter/Newsletter";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -16,6 +17,7 @@ root.render(
     <BrowserRouter>
       <Header></Header>
       <RoutesUrl></RoutesUrl>
+
       <Footer></Footer>
     </BrowserRouter>
   </React.StrictMode>
