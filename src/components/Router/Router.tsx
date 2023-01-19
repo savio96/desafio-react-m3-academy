@@ -4,6 +4,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Home } from "../../pages/Home";
 import { Teste } from "../../pages/Teste";
 import { Cursos } from "../../pages/Cursos";
+import { Institucionais } from "../../pages/Institucionais";
 /*
 import Home from "./Home";
 import Sobre from "./Sobre";
@@ -18,6 +19,10 @@ const RoutesUrl = () => {
     <Routes>
       <Route path="/" element={<Home titulo="Home" />}></Route>
       <Route path="/cursos" element={<Cursos titulo="Cursos" />} />
+      <Route
+        path="/institucionais"
+        element={<Institucionais titulo="Institucional" />}
+      />
     </Routes>
   );
 };
