@@ -2,14 +2,24 @@
   display: flex;
   flex-direction: row;
   gap: 12px;
+  padding: 0 0 0 0;
 }
 .paymentsItem {
+  img {
+    width: 35px;
+    height: 20.2px;
+    @media screen and (min-width: 2500px) {
+      width: 70px;
+      height: 40.25px;
+    }
+  }
 }
-img {
-  width: 35px;
-  height: 20.2px;
-}
+
 .paymentsPci {
   width: 54.61px;
   height: 34px;
+  @media screen and (min-width: 2500px) {
+    width: 106px;
+    height: 66px;
+  }
 }
