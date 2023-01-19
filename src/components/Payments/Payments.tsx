@@ -38,7 +38,7 @@ const Payments = () => {
 };
 
 const VtexPci = () => {
-  return <img src={vtexImg} alt="vtx Pci" />;
+  return <img className={styles["paymentsPci"]} src={vtexImg} alt="vtx Pci" />;
 };
 
 export { Payments, VtexPci };

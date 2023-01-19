@@ -1,32 +1,79 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { M3Logo } from "../M3Logo/M3Logo";
 import styles from "./navigationBar.module.scss";
-
+import m3LogoImg from "./assets/image/Logo-M3Academy.svg";
+import { Cart } from "../Cart/Cart";
+import React, { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
+import { Enter } from "../Enter/Enter";
 const NavigationBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link className={styles["cursosNav"]} href="#cursos">
-              CURSOS
-            </Nav.Link>
-            <Nav.Link className={styles["saibaNav"]} href="#saibamais">
-              SAIBA MAIS
-            </Nav.Link>
-            <Nav.Link
-              className={styles["instituicionaisNav"]}
-              href="#institucionais"
-            >
-              INSTITUCIONAIS
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+      <nav
+        className="navbar navbar-expand-xpp bg-body-tertiary "
+        id="navegador"
+      >
+        <div className="container-fluid">
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <a className="navbar-brand" href="#">
+            <img
+              className="logoM3Img"
+              src={m3LogoImg}
+              alt="M3 Academy mobile"
+            />
+          </a>
+          <div className="carrinho-wrapper">
+            <Cart />
+          </div>
+
+          <div
+            className="offcanvas offcanvas-end"
+            id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel"
+          >
+            <div className="offcanvas-header">
+              <div className="entrar_wrapper">
+                <Enter></Enter>
+              </div>
+              <button
+                type="button"
+                className="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" to="/cursos">
+                  CURSOS
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/cursos">
+                  SAIBA MAIS
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/cursos">
+                  INSTITUCIONAIS
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <Outlet />
+    </>
   );
 };
 

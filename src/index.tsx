@@ -1,14 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/main.scss";
+import { BrowserRouter, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
-
+import { Teste } from "./pages/Teste";
+import { Cursos } from "./pages/Cursos";
+import { RoutesUrl } from "./components/Router/Router";
+import { Header } from "./sectors/Header/Header";
+import { Footer } from "./sectors/Footer/Footer";
+import { Newsletter } from "./components/Newsletter/Newsletter";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Home />
+    <BrowserRouter>
+      <Header></Header>
+      <RoutesUrl></RoutesUrl>
+
+      <Footer></Footer>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
