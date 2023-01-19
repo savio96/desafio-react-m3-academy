@@ -22,3 +22,8 @@
     align-items: flex-start;
   }
 }
+@media screen and (min-width: 1025px) {
+  .top_footerMob_wrapper {
+    display: none;
+  }
+}
