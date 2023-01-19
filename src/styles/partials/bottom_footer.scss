@@ -1,0 +1,18 @@
+.bottom_footer {
+  display: flex;
+  flex-direction: row;
+  background: black;
+}
+.bottom_footer_itens {
+  display: flex;
+  flex-direction: row;
+}
+.pagamentos {
+  display: flex;
+  flex-direction: row;
+
+  p {
+    color: white;
+  }
+  gap: 5px;
+}

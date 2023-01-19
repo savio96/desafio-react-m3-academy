@@ -1,0 +1,10 @@
+.whatsapp-wrapper {
+  img {
+    width: 34px;
+    height: 34px;
+    @media screen and (min-width: 2500px) {
+      width: 66px;
+      height: 66px;
+    }
+  }
+}

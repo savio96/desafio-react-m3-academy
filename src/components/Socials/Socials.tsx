@@ -11,19 +11,29 @@ const Socials = () => {
     <div className={styles["socials-wrapper"]}>
       <ul className={styles["socialsList"]}>
         <li className={styles["socials-item"]}>
-          <img src={facebookImg} alt="Facebook" />
+          <a href="">
+            <img src={facebookImg} alt="Facebook" />
+          </a>
         </li>
         <li className={styles["socials-item"]}>
-          <img src={instagramImg} alt="Instagram" />
+          <a href="">
+            <img src={instagramImg} alt="Instagram" />
+          </a>
         </li>
         <li className={styles["socials-item"]}>
-          <img src={twitterImg} alt="Twitter" />
+          <a href="">
+            <img src={twitterImg} alt="Twitter" />
+          </a>
         </li>
         <li className={styles["socials-item"]}>
-          <img src={youtubeImg} alt="Youtube" />
+          <a href="">
+            <img src={youtubeImg} alt="Youtube" />
+          </a>
         </li>
         <li className={styles["socials-item"]}>
-          <img src={linkedinImg} alt="Linkedin" />
+          <a href="">
+            <img src={linkedinImg} alt="Linkedin" />
+          </a>
         </li>
       </ul>
       <a className={styles["siteLink"]} href="/">
