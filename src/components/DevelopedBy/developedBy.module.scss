@@ -3,6 +3,27 @@
   flex-direction: row;
   align-items: center;
   p {
-    margin-right: 30px;
+    display: flex;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+    text-transform: capitalize;
+    margin-right: 13px;
+    color: white;
+    margin: 0 13px 0 0;
+    @media screen and (min-width: 2500px) {
+      font-size: 20px;
+    }
+  }
+  img {
+    width: 28.66px;
+    height: 15.65px;
+    @media screen and (min-width: 2500px) {
+      width: 34.15px;
+      height: 23.87px;
+    }
   }
 }

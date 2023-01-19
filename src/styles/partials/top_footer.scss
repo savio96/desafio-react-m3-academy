@@ -1,11 +1,13 @@
-.top_footer_itens {
+.top_footer_wrapper {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  padding: 0 0 0 0 !important;
+  justify-content: space-between;
+  padding: 50px 16px 64px 100px;
+  border-top: 1px solid black;
 }
-.top_footer_item {
+.top_footer_socials {
   display: flex;
   flex-direction: row;
+  gap: 50px;
 }

@@ -1,0 +1,30 @@
+.bottom_footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: black;
+  margin: 0 auto;
+  padding: 20px 100px;
+  justify-content: space-between;
+}
+.bottom_footer_itens {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.pagamentos {
+  display: flex;
+  flex-direction: row;
+
+  p {
+    color: white;
+  }
+  gap: 5px;
+}
+.creation {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+}
