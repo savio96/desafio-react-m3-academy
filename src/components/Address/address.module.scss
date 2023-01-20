@@ -12,9 +12,11 @@
   margin: 0 0 0 0;
   align-items: center;
   @media screen and (min-width: 2500px) {
+    display: flex;
     width: 467px;
     height: 47px;
     font-size: 20px;
     line-height: 23px;
+    align-items: center;
   }
 }

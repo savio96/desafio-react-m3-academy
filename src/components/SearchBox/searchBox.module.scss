@@ -12,12 +12,13 @@
   height: 32px;
   font-size: 28px;
   background: #ffffff;
-
+  font-size: 14px;
   border: 2px solid #f2f2f2;
   border-radius: 5px;
   @media screen and (min-width: 2500px) {
     width: 515.62px;
     height: 57px;
+    font-size: 28px;
   }
   @media screen and (max-width: 1024px) {
     width: 992px;

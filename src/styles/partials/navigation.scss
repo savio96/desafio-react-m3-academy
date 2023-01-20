@@ -56,3 +56,8 @@
     height: 585px;
   }
 }
+@media screen and (min-width: 2500px) {
+  .navbar-nav {
+    gap: 55px;
+  }
+}
