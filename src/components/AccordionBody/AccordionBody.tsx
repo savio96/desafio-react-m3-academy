@@ -9,11 +9,11 @@ const AccordionBody = () => {
     <Tab.Container id="list-group-tabs" defaultActiveKey="#link1">
       <Row>
         <Col sm={4}>
-          <ListGroup>
-            <ListGroup.Item className={styles["acc-item"]} action href="#link1">
+          <ListGroup className="accList">
+            <ListGroup.Item variant="dark" action href="#link1">
               Sobre
             </ListGroup.Item>
-            <ListGroup.Item action href="#link2">
+            <ListGroup.Item variant="dark" action href="#link2">
               Contato
             </ListGroup.Item>
           </ListGroup>
@@ -50,7 +50,7 @@ const AccordionBody = () => {
                 </p>
               </div>
             </Tab.Pane>
-            <Tab.Pane eventKey="#link2">
+            <Tab.Pane className="contato-item" eventKey="#link2">
               <FormInput></FormInput>
             </Tab.Pane>
           </Tab.Content>

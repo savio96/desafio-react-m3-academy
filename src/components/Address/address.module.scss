@@ -1,4 +1,5 @@
 .endereco {
+  display: flex;
   width: 234px;
   height: 24px;
   font-family: "Roboto";
@@ -9,7 +10,7 @@
   text-transform: capitalize;
   color: white;
   margin: 0 0 0 0;
-
+  align-items: center;
   @media screen and (min-width: 2500px) {
     width: 467px;
     height: 47px;
