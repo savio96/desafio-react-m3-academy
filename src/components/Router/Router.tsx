@@ -5,15 +5,7 @@ import { Home } from "../../pages/Home";
 import { Teste } from "../../pages/Teste";
 import { Cursos } from "../../pages/Cursos";
 import { Institucionais } from "../../pages/Institucionais";
-/*
-import Home from "./Home";
-import Sobre from "./Sobre";
-import Usuario from "./Usuario";
-<Route component={Home} path="/" exact />
-      <Route component={Sobre} path="/sobre" />
-      <Route component={Usuario} path="/usuario" />
-*/
-
+import { Saiba } from "../../pages/Saiba";
 const RoutesUrl = () => {
   return (
     <Routes>
@@ -23,6 +15,7 @@ const RoutesUrl = () => {
         path="/institucionais"
         element={<Institucionais titulo="Institucional" />}
       />
+      <Route path="/saiba" element={<Saiba titulo="Saiba mais" />} />
     </Routes>
   );
 };

@@ -29,17 +29,7 @@ const FormInput = () => {
     tel: "",
     instagram: "",
     termos: false,
-  }; /*
-  const formik = useFormik({
-    initialValues: {
-      nome: "",
-      email: "",
-      cpf: "",
-      nascimento: "",
-      tel: "",
-      instagram: "",
-      termos: false,
-    },*/
+  };
   validationSchema: Yup.object({
     nome: Yup.string()
       .required("*Campo Obrigatório")
@@ -57,12 +47,7 @@ const FormInput = () => {
     tel: Yup.string().required("*Campo Obrigatório"),
     instagram: Yup.string().required("*Campo Obrigatório"),
     termos: Yup.boolean().required("*").isTrue(),
-  }); /*
-    onSubmit: function (values) {
-      alert(`You are registered! Name: ${values.nome}. Email: ${values.email}. Profession: ${values.cpf}. 
-              Age: ${values.nascimento},${values.tel},${values.instagram}`);
-    },
-  });*/
+  });
   const validacao = Yup.object().shape({
     nome: Yup.string()
       .required("*Campo Obrigatório")

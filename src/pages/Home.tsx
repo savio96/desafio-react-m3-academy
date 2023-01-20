@@ -1,8 +1,12 @@
 import React from "react";
-import { Header } from "../sectors/Header/Header";
-import { Footer } from "../sectors/Footer/Footer";
+import { HomeBody } from "../sectors/Body/HomeBody";
+
 const Home = (prop: { titulo: string }) => {
-  return <div></div>;
+  return (
+    <div>
+      <HomeBody></HomeBody>
+    </div>
+  );
 };
 
 export { Home };

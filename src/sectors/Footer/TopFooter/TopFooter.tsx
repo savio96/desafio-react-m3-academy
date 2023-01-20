@@ -17,7 +17,6 @@ const TopFooter = () => {
 
         <div className="top_footer_socials">
           <Socials></Socials>
-          <Whatsapp></Whatsapp>
         </div>
       </div>
       <div className="top_footerMob_wrapper">

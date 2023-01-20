@@ -9,12 +9,14 @@ import { RoutesUrl } from "./components/Router/Router";
 import { Header } from "./sectors/Header/Header";
 import { Footer } from "./sectors/Footer/Footer";
 import { Newsletter } from "./components/Newsletter/Newsletter";
+import { ContactWhat } from "./sectors/ContactWhat/ContactWhat";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ContactWhat></ContactWhat>
       <Header></Header>
       <RoutesUrl></RoutesUrl>
 
