@@ -1,0 +1,21 @@
+.scroll-wrapper {
+  display: flex; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  flex-direction: column;
+  gap: 5px;
+}
+#myBtn {
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+
+  background-color: transparent;
+  @media screen and (min-width: 2500px) {
+    img {
+      width: 66px;
+    }
+  }
+}

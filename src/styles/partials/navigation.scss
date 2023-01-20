@@ -1,0 +1,63 @@
+@media screen and (min-width: 1025px) {
+  .logoM3Img {
+    display: none;
+  }
+  .carrinho-wrapper {
+    display: none;
+  }
+}
+.logoM3Img {
+  width: 136px;
+}
+.nav-link {
+  font-family: "Roboto";
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  &:hover {
+    color: aqua;
+  }
+  .active {
+    color: aquamarine;
+  }
+  @media screen and (min-width: 2500px) {
+    font-size: 28px;
+  }
+  @media screen and (max-width: 1025px) {
+    color: #c4c4c4;
+  }
+}
+.bottom_header {
+  background: black;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+}
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-fluid {
+    padding: 0 0 0 0;
+  }
+  .navbar-nav {
+    margin-left: 20px;
+  }
+  .offcanvas-header {
+    background-color: black;
+  }
+  .btn-close {
+    background-color: #c4c4c4;
+  }
+  .offcanvas {
+    width: 100% !important;
+    height: 585px;
+  }
+}
+@media screen and (min-width: 2500px) {
+  .navbar-nav {
+    gap: 55px;
+  }
+}

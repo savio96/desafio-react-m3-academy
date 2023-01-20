@@ -1,0 +1,15 @@
+.top_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 22px 100px 22px 100px;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+.sign_up {
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+}

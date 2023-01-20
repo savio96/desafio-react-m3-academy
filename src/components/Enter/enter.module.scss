@@ -1,0 +1,15 @@
+.enterLink {
+  display: flex;
+  width: 53px;
+  height: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+
+  @media screen and (min-width: 2500px) {
+    width: 105px;
+    height: 33px;
+    font-size: 28px;
+  }
+}

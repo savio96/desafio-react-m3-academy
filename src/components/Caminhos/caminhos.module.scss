@@ -1,0 +1,29 @@
+.caminhos-itens {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: baseline;
+  margin: 30px 0 0 100px;
+  p {
+    display: flex;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #c4c4c4;
+    align-items: center;
+  }
+  @media screen and (min-width: 2500px) {
+    align-items: flex-start;
+    p {
+      font-size: 24px;
+    }
+  }
+}
+.home_img {
+  width: 16px;
+  @media screen and (min-width: 2500px) {
+    width: 31.25px;
+  }
+}

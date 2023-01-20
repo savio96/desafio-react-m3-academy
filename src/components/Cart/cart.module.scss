@@ -1,0 +1,17 @@
+.cartLink {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  @media screen and (min-width: 2500px) {
+    width: 54.68px;
+    height: 38.91px;
+  }
+}
+.cartImg {
+  width: 28px;
+  height: 28px;
+  @media screen and (min-width: 2500px) {
+    width: 54.68px;
+    height: 54.68px;
+  }
+}
