@@ -2,13 +2,14 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .institucional-title {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 24px;
   line-height: 28.13px;
+  display: flex;
+  justify-content: center;
   @media screen and (min-width: 2500px) {
     font-size: 48px;
     line-height: 56.25px;
