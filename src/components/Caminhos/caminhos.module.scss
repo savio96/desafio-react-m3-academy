@@ -13,7 +13,10 @@
     text-transform: uppercase;
     color: #c4c4c4;
     align-items: center;
-    @media screen and (min-width: 2500px) {
+  }
+  @media screen and (min-width: 2500px) {
+    align-items: flex-start;
+    p {
       font-size: 24px;
     }
   }
