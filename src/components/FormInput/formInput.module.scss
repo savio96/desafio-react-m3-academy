@@ -17,6 +17,11 @@
   @media screen and (min-width: 2500px) {
     font-size: 48px;
   }
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .form-wrapper form {
   width: 100%;
@@ -93,6 +98,8 @@
 }
 
 #check {
+  display: flex;
+  align-items: center;
   font-size: 15px;
   border: 1px solid #000000;
   border-radius: 3px;

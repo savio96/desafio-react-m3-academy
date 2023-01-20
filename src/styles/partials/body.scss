@@ -1,15 +1,21 @@
-.institucional-wrapper {
+.body-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin: 80px 0 80px 0;
+  padding: 0 100px 0 100px;
+  @media screen and (max-width: 1025px) {
+    padding: 0 16px 0 16px;
+  }
 }
-.institucional-title {
+.body-title {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 24px;
   line-height: 28.13px;
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
   @media screen and (min-width: 2500px) {
     font-size: 48px;
     line-height: 56.25px;

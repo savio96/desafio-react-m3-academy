@@ -18,3 +18,21 @@
 .contato-item {
   width: 100%;
 }
+@media screen and (max-width: 1025px) {
+  .fileiraItens {
+    flex-direction: column;
+  }
+  .conteudoLista {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .indexLista {
+    width: 100%;
+  }
+  .conteudo {
+    h2 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
