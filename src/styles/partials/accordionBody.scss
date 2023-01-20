@@ -1,4 +1,5 @@
 .accList {
+  width: 100%;
   a {
     background-color: white;
     border-radius: 0;
@@ -12,4 +13,8 @@
       line-height: 38px;
     }
   }
+  border-right: 1px solid black;
+}
+.contato-item {
+  width: 100%;
 }

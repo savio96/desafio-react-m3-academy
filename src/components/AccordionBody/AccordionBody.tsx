@@ -50,7 +50,7 @@ const AccordionBody = () => {
                 </p>
               </div>
             </Tab.Pane>
-            <Tab.Pane eventKey="#link2">
+            <Tab.Pane className="contato-item" eventKey="#link2">
               <FormInput></FormInput>
             </Tab.Pane>
           </Tab.Content>
